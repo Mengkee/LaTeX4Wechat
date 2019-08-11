@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[paperheight=156mm,paperwidth=72.3mm,margin=5mm]{geometry}
+\parskip=.8\baselineskip \advance\parskip by 0pt plus .2\baselineskip\relax
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\usepackage{lmodern}
+
+\usepackage{scrextend}
+\changefontsizes[11pt]{9pt}
+
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{fontspec}
+\setmainfont{Minion Pro}
+\setsansfont{Myriad Pro}
+\setmonofont{Ubuntu Mono}
+
+\usepackage{xeCJK}
+\setCJKmainfont{方正楷体简体}
+\setCJKsansfont{苹方 中等}
+\setCJKmonofont{楷体}
+\renewcommand*\familydefault{\sfdefault}
+%
+\linespread{1.3}
+\usepackage{lipsum} % Dummy Text
+\usepackage{zhlipsum} % Dummy Text
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\begin{document}
+
+
+\color{gray}
+
+\zhlipsum[1]
+\begin{equation}
+a^2+b^2=c^2
+\end{equation}
+\zhlipsum[3]
+\begin{equation}
+    \int_{-\infty}^{\infty} F(x, y) \, dx =
+    \begin{cases}
+         \alpha_i g(x_i, y)  & \text{ if } y > 0 \\
+         \alpha_i g(x_i, y)  & \text{ if } y \leq 0 \\
+    \end{cases}
+\end{equation}
+\zhlipsum[5]
+
+\end{document}
